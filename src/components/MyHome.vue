@@ -1,12 +1,20 @@
 <template>
-  <div>
-    <h3>HOme 后台主页</h3>
+  <div class="home-box">
+    <!-- 顶部区域 -->
+    <Header></Header>
+    <!-- 侧边导航栏 -->
+
+    <!-- 内容区域 -->
   </div>
 </template>
 
 <script>
+import Header from '@/components/subcomponents/Header.vue'
 export default {
-  name: 'MyHome'
+  name: 'MyHome',
+  components: {
+    Header
+  }
 }
 </script>
 
