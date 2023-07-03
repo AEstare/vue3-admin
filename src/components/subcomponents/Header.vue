@@ -4,18 +4,6 @@
       <div class="container-fluid">
         <!-- 标签 -->
         <a class="navbar-brand">后台管理</a>
-        <!-- 搜索栏 -->
-        <div class="search-box">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-4 DocSearch"
-              type="Search"
-              placeholder="搜索"
-              aria-label="Search"
-              @keyup.enter="search"
-            />
-          </form>
-        </div>
         <!-- 个人中心 -->
         <ul class="nav-ul">
           <li>
@@ -78,13 +66,6 @@ export default {
 .header-box {
   border-bottom: 1px solid rgb(rgb(163, 163, 163));
 }
-.DocSearch {
-  width: 350px;
-  height: 40px;
-  @media screen and (max-width: 720px) {
-    display: none;
-  }
-}
 .nav-ul {
   list-style-type: none;
   position: absolute;
@@ -92,6 +73,7 @@ export default {
   .dropdown {
     position: fixed;
     right: 40px;
+    top: 5px;
     .log-out {
       color: red;
       --bs-dropdown-link-hover-color: red;
