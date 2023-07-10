@@ -18,13 +18,21 @@
               </button>
               <ul class="dropdown-menu position-absolute">
                 <li>
-                  <a class="dropdown-item navbar-brand" href="#">我的账号</a>
+                  <router-link
+                    class="dropdown-item navbar-brand"
+                    to="/home/UserInfo"
+                    >我的账号</router-link
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item navbar-brand" href="#">修改密码</a>
+                  <router-link
+                    class="dropdown-item navbar-brand"
+                    to="/home/UserPwd"
+                    >修改密码</router-link
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item log-out navbar-brand" href="#"
+                  <a class="dropdown-item log-out navbar-brand" @click="logout"
                     >退出登陆</a
                   >
                 </li>
@@ -53,10 +61,13 @@ export default {
     }
   },
   methods: {
-    search() {},
     darkMode() {
       this.dark = !this.dark
       this.$emit('dark', this.dark)
+    },
+    logout() {
+      this.$router.push('/login')
+      localStorage.removeItem('token')
     }
   }
 }

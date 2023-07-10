@@ -51,7 +51,7 @@ export default {
     height: 100%;
     display: flex;
     .body-box {
-      padding: 15px;
+      padding: 15px 0 0 200px;
       flex: 1;
     }
   }

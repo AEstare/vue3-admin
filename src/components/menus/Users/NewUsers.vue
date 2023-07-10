@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h3>Rights组件</h3>
+    <h3>NewUsers组件</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Rights'
+  name: 'NewUsers'
 }
 </script>
 
