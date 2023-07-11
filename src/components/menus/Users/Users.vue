@@ -68,7 +68,7 @@
                   class="btn btn-secondary"
                   data-bs-dismiss="modal"
                 >
-                  取消
+                  关闭
                 </button>
                 <button type="button" class="btn btn-primary">保存</button>
               </div>
