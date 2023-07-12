@@ -114,7 +114,6 @@ export default {
       }
     },
     async goodslist_id(id) {
-      this.listId = id
       this.username = this.userslist[id].name
     }
   },
